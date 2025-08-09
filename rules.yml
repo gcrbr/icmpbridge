@@ -1,0 +1,6 @@
+- rule: 1
+  forward:
+    protocol: tcp
+    address: localhost
+    port: 8080
+  log: true
