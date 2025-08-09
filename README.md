@@ -17,11 +17,12 @@ You can run an HTTP proxy over ICMP, check the example in the `client/examples`f
     ```bash
     ./icmpbridge -p yourpassword
     ``` 
-2. Run the proxy server on your machine: 
+2. Run any HTTP proxy software on the remote host on the port 8080 (you can change it from the rules file)
+3. Run the proxy server on your machine: 
     ```bash
     python3 proxy.py -r remotehost -pw yourpassword
     ```
-3. Try it out:
+4. Try it out:
     ```bash
     curl 'http://example.com' -x 'http://127.0.0.1:8080'
     ```
